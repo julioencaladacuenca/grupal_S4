@@ -43,9 +43,9 @@ El modelo fue evaluado mediante métricas estándar, incluyendo accuracy, matriz
 ## 📈 Resultados principales
 El modelo Random Forest obtuvo un **accuracy aproximado del 91 %** sobre el conjunto de prueba, mostrando un desempeño equilibrado entre las clases *Compra* y *No compra*. 
 
-A partir de las técnicas de explicabilidad aplicadas, se identificó que las variables **Age** y **EstimatedSalary** son las que ejercen mayor influencia en las decisiones del modelo, tanto a nivel global como local. En contraste, la variable **Gender** presenta un impacto reducido, lo que disminuye el riesgo de sesgos directos asociados a esta característica sensible.
+Los análisis de explicabilidad evidencian que las variables **Age** y **EstimatedSalary** son las que ejercen mayor influencia en las decisiones del modelo, tanto a nivel global como local. En contraste, la variable **Gender** presenta un impacto reducido, lo que disminuye el riesgo de sesgos directos asociados a esta característica sensible.
 
-Los análisis locales realizados con SHAP y LIME muestran coherencia en las explicaciones individuales, reforzando la confianza en la interpretación del comportamiento del modelo.
+Las explicaciones locales obtenidas mediante SHAP y LIME muestran coherencia en la interpretación de decisiones individuales, reforzando la confianza en el comportamiento del modelo.
 
 ---
 
@@ -58,7 +58,7 @@ Para analizar la toma de decisiones del modelo, se aplicaron las siguientes téc
 - **LIME**
   - Explicaciones locales para casos concretos
 
-Estas técnicas permitieron identificar las variables más influyentes, comparar explicaciones entre métodos y analizar decisiones individuales del modelo. Las visualizaciones generadas se encuentran en la carpeta `figures/`.
+Las visualizaciones generadas se encuentran en la carpeta `figures/`.
 
 ---
 
@@ -74,7 +74,7 @@ grupal_S4/
 │   └── Social_Network_Ads.csv
 ├── notebooks/     # Notebook principal del análisis
 │   └── S4_Explicabilidad_RandomForest_SHAP_LIME.ipynb
-├── figures/       # Gráficos y visualizaciones XAI (exportados del notebook)
+├── figures/       # Gráficos y visualizaciones XAI
 │   ├── eda_purchased_distribution.png
 │   ├── shap_global_summary.png
 │   ├── shap_global_bar.png
@@ -82,6 +82,4 @@ grupal_S4/
 │   ├── shap_local_no_compra.png
 │   ├── lime_local_compra.png
 │   └── lime_local_no_compra.png
-├── video/         # Enlace a la presentación técnica
-│   └── enlace_video.txt
 └── README.md
