@@ -83,3 +83,11 @@ grupal_S4/
 │   ├── lime_local_compra.png
 │   └── lime_local_no_compra.png
 └── README.md
+---
+
+## 🎥 Presentación técnica (5–10 minutos)
+
+Enlace a la presentación técnica donde se explica el problema abordado, la metodología aplicada, las técnicas de explicabilidad utilizadas, el análisis comparativo y las conclusiones finales:
+
+👉 **ENLACE AL VIDEO:**  
+https://TU_ENLACE_AQUI
