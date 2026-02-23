@@ -21,8 +21,8 @@ El dataset se encuentra disponible en la carpeta `data/`.
 
 La metodología empleada en este trabajo se basa directamente en las acciones desarrolladas en el notebook de Google Colab, siguiendo un flujo típico de aprendizaje supervisado con énfasis en explicabilidad (XAI).
 
-### Carga y exploración de datos
-El dataset fue cargado desde un archivo local y se realizó una inspección inicial para verificar su estructura, tipos de datos y variable objetivo. Posteriormente, se llevó a cabo un análisis exploratorio de datos (EDA), incluyendo visualizaciones de la distribución de la variable *Purchased* y el comportamiento de las variables *Age* y *EstimatedSalary*, tanto de forma general como segmentada por clase.
+### Exploración de datos
+Se realizó una inspección inicial para verificar su estructura, tipos de datos y variable objetivo. Posteriormente, se llevó a cabo un análisis exploratorio de datos (EDA), incluyendo visualizaciones de la distribución de la variable *Purchased* y el comportamiento de las variables *Age* y *EstimatedSalary*, tanto de forma general como segmentada por clase.
 
 ### Preprocesamiento
 Como parte del preprocesamiento, la variable categórica *Gender* fue codificada en formato binario (0/1). No se aplicó escalado de variables, ya que el modelo seleccionado (Random Forest) no lo requiere y mantener las variables en su escala original favorece la interpretabilidad de las técnicas de explicabilidad utilizadas.
