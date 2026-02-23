@@ -59,7 +59,7 @@ grupal_S4/
 ├── data/          # Dataset utilizado
 │   └── Social_Network_Ads.csv
 ├── notebooks/     # Notebook principal del análisis
-│   └── S4_Explicabilidad_RandomForest_SHAP_LIME.ipynb
+│   └── Deber_Grupal_S4.ipynb
 ├── figures/       # Gráficos y visualizaciones XAI
 │   ├── eda_purchased_distribution.png
 │   ├── shap_global_summary.png
