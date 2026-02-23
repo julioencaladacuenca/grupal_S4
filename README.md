@@ -18,26 +18,29 @@ El dataset se encuentra disponible en la carpeta `data/`.
 ---
 
 ## 🧠 Metodología
-El desarrollo de la actividad siguió las siguientes etapas:
 
-1. Análisis exploratorio de datos (EDA)
-2. Evaluación de la calidad de los datos
-3. Preprocesamiento de variables
-4. Entrenamiento de un modelo predictivo supervisado
-5. Evaluación del desempeño del modelo
-6. Aplicación de técnicas de explicabilidad (XAI)
-7. Análisis ético y reflexivo de los resultados obtenidos
+La metodología empleada en este trabajo se basa directamente en las acciones desarrolladas en el notebook de Google Colab, siguiendo un flujo típico de aprendizaje supervisado con énfasis en explicabilidad (XAI).
 
-Toda la metodología y el análisis se documentan en el notebook principal del repositorio.
+### Carga y exploración de datos
+El dataset fue cargado desde un archivo local y se realizó una inspección inicial para verificar su estructura, tipos de datos y variable objetivo. Posteriormente, se llevó a cabo un análisis exploratorio de datos (EDA), incluyendo visualizaciones de la distribución de la variable *Purchased* y el comportamiento de las variables *Age* y *EstimatedSalary*, tanto de forma general como segmentada por clase.
 
----
+### Preprocesamiento
+Como parte del preprocesamiento, la variable categórica *Gender* fue codificada en formato binario (0/1). No se aplicó escalado de variables, ya que el modelo seleccionado (Random Forest) no lo requiere y mantener las variables en su escala original favorece la interpretabilidad de las técnicas de explicabilidad utilizadas.
 
-## 🤖 Modelo predictivo
-- **Tipo de problema:** Clasificación binaria  
-- **Modelo utilizado:** Random Forest Classifier  
-- **Variable objetivo:** Purchased  
+### División de los datos
+El conjunto de datos fue dividido en subconjuntos de entrenamiento y prueba utilizando una partición estratificada, con el objetivo de preservar la proporción de clases en ambos conjuntos.
 
-El modelo fue evaluado mediante métricas estándar, incluyendo accuracy, matriz de confusión, precision, recall y F1-score, con el fin de verificar su desempeño antes de aplicar técnicas de explicabilidad.
+### Entrenamiento del modelo
+Se entrenó un modelo **Random Forest Classifier** para un problema de clasificación binaria, utilizando hiperparámetros básicos y sin realizar procesos de ajuste complejo (tuning), priorizando la claridad metodológica y la interpretabilidad del modelo.
+
+### Evaluación del modelo
+El desempeño del modelo fue evaluado mediante métricas estándar, incluyendo accuracy, matriz de confusión y reporte de clasificación (precision, recall y F1-score), con el fin de verificar su capacidad predictiva antes de aplicar técnicas de explicabilidad.
+
+### Técnicas de explicabilidad (XAI)
+Para analizar cómo el modelo toma decisiones, se aplicaron técnicas de inteligencia artificial explicable. En primer lugar, se utilizó **SHAP** para obtener explicaciones globales (importancia de variables) y locales (predicciones individuales). Posteriormente, se empleó **LIME** para generar explicaciones locales adicionales y contrastar los resultados obtenidos con SHAP.
+
+### Análisis ético
+Finalmente, a partir de las explicaciones generadas, se realizó un análisis reflexivo sobre la transparencia del modelo, la influencia de variables sensibles y los posibles riesgos éticos y sociales asociados a su implementación.
 
 ---
 
@@ -47,19 +50,6 @@ El modelo Random Forest obtuvo un **accuracy aproximado del 91 %** sobre el conj
 Los análisis de explicabilidad evidencian que las variables **Age** y **EstimatedSalary** son las que ejercen mayor influencia en las decisiones del modelo, tanto a nivel global como local. En contraste, la variable **Gender** presenta un impacto reducido, lo que disminuye el riesgo de sesgos directos asociados a esta característica sensible.
 
 Las explicaciones locales obtenidas mediante SHAP y LIME muestran coherencia en la interpretación de decisiones individuales, reforzando la confianza en el comportamiento del modelo.
-
----
-
-## 🔍 Técnicas de explicabilidad aplicadas (XAI)
-Para analizar la toma de decisiones del modelo, se aplicaron las siguientes técnicas de explicabilidad:
-
-- **SHAP**
-  - Explicabilidad global (importancia de variables)
-  - Explicabilidad local (predicciones individuales)
-- **LIME**
-  - Explicaciones locales para casos concretos
-
-Las visualizaciones generadas se encuentran en la carpeta `figures/`.
 
 ---
 
