@@ -72,9 +72,9 @@ grupal_S4/
 ```
 ---
 
-## 🎥 Presentación técnica (5–10 minutos)
+## 🎥 Presentación técnica
 
 Enlace a la presentación técnica donde se explica el problema abordado, la metodología aplicada, las técnicas de explicabilidad utilizadas, el análisis comparativo y las conclusiones finales:
 
 👉 **ENLACE AL VIDEO:**  
-https://TU_ENLACE_AQUI
+https://ENLACE_DEL_VIDEO
