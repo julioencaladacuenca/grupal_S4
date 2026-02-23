@@ -1,6 +1,7 @@
-# Grupal_S4 – Explicabilidad de Modelos Predictivos (XAI)
-
-Repositorio correspondiente a la actividad **S4**, cuyo objetivo es entrenar un modelo predictivo supervisado y aplicar técnicas de explicabilidad para analizar cómo el modelo toma decisiones, así como reflexionar sobre aspectos éticos, sociales y de transparencia en sistemas de inteligencia artificial.
+# EXPLICABILIDAD DE MODELOS PREDICTIVOS CON RANDOM FOREST
+Análisis con SHAP y LIME sobre el dataset Social Network Ads
+# Objetivo
+Entrenar un modelo supervisado de clasificación basado en Random Forest para predecir la variable Purchased, y aplicar técnicas de explicabilidad (SHAP y LIME) con el fin de comprender cómo las variables influyen en las decisiones del modelo, así como reflexionar sobre la transparencia, los riesgos éticos y las implicaciones sociales de su posible implementación.
 
 ---
 
