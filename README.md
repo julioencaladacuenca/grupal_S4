@@ -83,6 +83,7 @@ grupal_S4/
 │   ├── lime_local_compra.png
 │   └── lime_local_no_compra.png
 └── README.md
+```
 ---
 
 ## 🎥 Presentación técnica (5–10 minutos)
