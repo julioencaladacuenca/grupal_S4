@@ -53,11 +53,6 @@ Las explicaciones locales obtenidas mediante SHAP y LIME muestran coherencia en 
 
 ---
 
-## ⚖️ Transparencia, sesgos y análisis ético
-A partir de las técnicas de explicabilidad, se analizó la transparencia del modelo, la influencia de variables sensibles, los posibles riesgos éticos y sociales de su implementación, así como la importancia de incorporar explicabilidad en sistemas predictivos utilizados en contextos reales. Estas reflexiones se desarrollan dentro del notebook principal.
-
----
-
 ## 📁 Estructura del repositorio
 ```text
 grupal_S4/
