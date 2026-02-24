@@ -19,7 +19,7 @@ El dataset se encuentra disponible en la carpeta `data/`.
 
 ## 🧠 Metodología
 
-La metodología empleada en este trabajo se basa directamente en las acciones desarrolladas en el notebook de Google Colab, siguiendo un flujo típico de aprendizaje supervisado con énfasis en explicabilidad (XAI).
+La metodología empleada en este trabajo sigue un flujo típico de aprendizaje supervisado con énfasis en explicabilidad (XAI), estructurado para garantizar tanto el desempeño predictivo del modelo como la comprensión de sus decisiones.
 
 ### Exploración de datos
 Se realizó una inspección inicial para verificar su estructura, tipos de datos y variable objetivo. Posteriormente, se llevó a cabo un análisis exploratorio de datos (EDA), incluyendo visualizaciones de la distribución de la variable *Purchased* y el comportamiento de las variables *Age* y *EstimatedSalary*, tanto de forma general como segmentada por clase.
