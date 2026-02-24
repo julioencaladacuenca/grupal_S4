@@ -45,11 +45,15 @@ Finalmente, a partir de las explicaciones generadas, se realizó un análisis re
 ---
 
 ## 📈 Resultados principales
-El modelo Random Forest obtuvo un **accuracy aproximado del 91 %** sobre el conjunto de prueba, mostrando un desempeño equilibrado entre las clases *Compra* y *No compra*. 
 
-Los análisis de explicabilidad evidencian que las variables **Age** y **EstimatedSalary** son las que ejercen mayor influencia en las decisiones del modelo, tanto a nivel global como local. En contraste, la variable **Gender** presenta un impacto reducido, lo que disminuye el riesgo de sesgos directos asociados a esta característica sensible.
+En el notebook principal del repositorio (`Deber_Grupal_S4.ipynb`) se presentan los resultados obtenidos a partir del entrenamiento del modelo y la aplicación de técnicas de explicabilidad. En particular, se destacan los siguientes aspectos:
 
-Las explicaciones locales obtenidas mediante SHAP y LIME muestran coherencia en la interpretación de decisiones individuales, reforzando la confianza en el comportamiento del modelo.
+- Desempeño adecuado del modelo Random Forest, con métricas que evidencian una capacidad consistente para diferenciar entre las clases *Compra* y *No compra*.
+- Identificación de las variables **Age** y **EstimatedSalary** como las de mayor influencia en las decisiones del modelo, tanto a nivel global como local, mediante técnicas SHAP.
+- Explicaciones locales coherentes de predicciones individuales, obtenidas con SHAP y LIME, que permiten comprender cómo distintas variables contribuyen a cada decisión.
+- Análisis reflexivo sobre la transparencia del modelo, la presencia de posibles sesgos y los riesgos éticos asociados a su implementación.
+
+Las visualizaciones y explicaciones que respaldan estos resultados se muestran directamente en el notebook.
 
 ---
 
