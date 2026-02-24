@@ -60,14 +60,6 @@ grupal_S4/
 │   └── Social_Network_Ads.csv
 ├── notebooks/     # Notebook principal del análisis
 │   └── Deber_Grupal_S4.ipynb
-├── figures/       # Gráficos y visualizaciones XAI
-│   ├── eda_purchased_distribution.png
-│   ├── shap_global_summary.png
-│   ├── shap_global_bar.png
-│   ├── shap_local_compra.png
-│   ├── shap_local_no_compra.png
-│   ├── lime_local_compra.png
-│   └── lime_local_no_compra.png
 └── README.md
 ```
 ---
