@@ -28,7 +28,7 @@ Se realizó una inspección inicial para verificar su estructura, tipos de datos
 Como parte del preprocesamiento, la variable categórica *Gender* fue codificada en formato binario (0/1). No se aplicó escalado de variables, ya que el modelo seleccionado (Random Forest) no lo requiere y mantener las variables en su escala original favorece la interpretabilidad de las técnicas de explicabilidad utilizadas.
 
 ### División de los datos
-El conjunto de datos fue dividido en subconjuntos de entrenamiento y prueba utilizando una partición estratificada, con el objetivo de preservar la proporción de clases en ambos conjuntos.
+El conjunto de datos fue dividido en subconjuntos de entrenamiento y prueba utilizando una partición estratificada, con el objetivo de preservar la proporción de clases en ambos conjuntos. Se empleó una división del 75 % para entrenamiento y 25 % para prueba (test_size = 0.25), permitiendo evaluar el desempeño del modelo sobre datos no utilizados durante el proceso de entrenamiento.
 
 ### Entrenamiento del modelo
 Se entrenó un modelo **Random Forest Classifier** para un problema de clasificación binaria, utilizando hiperparámetros básicos y sin realizar procesos de ajuste complejo (tuning), priorizando la claridad metodológica y la interpretabilidad del modelo.
