@@ -73,4 +73,4 @@ grupal_S4/
 Enlace a la presentación técnica donde se explica el problema abordado, la metodología aplicada, las técnicas de explicabilidad utilizadas, el análisis comparativo y las conclusiones finales:
 
 👉 **ENLACE AL VIDEO:**  
-https://ENLACE_DEL_VIDEO
+[https://ENLACE_DEL_VIDEO](https://drive.google.com/file/d/177CxaCwWil_pvzZc916c1hXr0mueXaQt/view?usp=drive_link)
